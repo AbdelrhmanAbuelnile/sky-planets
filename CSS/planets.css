@@ -1,0 +1,39 @@
+body{
+    background: linear-gradient(#01012e,#240019);
+    height:100%;   
+    font-family: system-ui;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    
+    background-image: url(../images/stars1.png);
+    height: 100%;
+    font-size: 1.2em;
+}
+section p {
+    font-size: 1.1em;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+    font-size:1.5em;
+    font-weight:700;
+    background: darkblue;
+    padding: 6px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    
+    transition:0.5s;
+    text-transform: uppercase;
+    position: relative;
+    z-index:50;
+}
+
+a:hover{
+    transform: scale(1.4);
+    background: darkmagenta;
+}

@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(#01012e,#240019);
+    height:100vh;   
+    font-family: system-ui;
+}
+
+header{
+    width:100%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 500;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    background: darkblue;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+header a:hover{
+    color:#ffffff;
+    background: darkmagenta;
+    transform: scale(1.2);
+}
+
+section{
+    background: url('../images/stars1.png');
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    text-align:center;
+}
+
+ul:hover li a{
+    opacity: 0;
+}
+
+ul li{
+    list-style: none;
+    margin:14px 0; 
+}
+
+ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3.4px;
+    background:darkblue;
+    padding:6px 18px;
+    border-radius: 20px;
+    display: inline-block;
+    
+    transition:0.5s;
+    text-transform: uppercase;
+    position: relative;
+    z-index:50;
+}
+
+ul li a:hover{
+    transform: scale(1.5);
+    background: darkmagenta;
+    opacity: 1;
+}
+
+ul li::after{
+    content: attr(data-text);
+    color:#fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,200%);
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    opacity: 0;
+    letter-spacing: 100px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+ul li:hover:after{
+    opacity: 0.5;
+    letter-spacing: 5px;
+}
+
+ul li::before{
+    content: "";
+    width: 180px;
+    height:80px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,470%);
+    box-shadow: 0 0 80px orangered ;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+ul li:hover::before{
+    opacity:0.7 ;
+    width:80px;
+}
+
+#sun{
+
+   list-style: none;
+   margin:14px 0; 
+    
+}
+
+#sun::after{
+    content: attr(data-text);
+    color:#fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    opacity: 0;
+    letter-spacing: 100px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+#sun:hover:after{
+    opacity: 0.5;
+    letter-spacing: 5px;
+}
+
+#sun::before{
+    content: "";
+    width: 180px;
+    height:80px;
+    border-radius: 50%;
+    background: rgb(237, 88, 2);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,70%);
+    box-shadow: 0 0 80px orangered ;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+#sun:hover::before{
+    opacity:0.7 ;
+    width:80px;
+}
+
+#mercury{
+
+    list-style: none;
+    margin:14px 0; 
+     
+}
+ 
+#mercury::after{
+     content: attr(data-text);
+     color:#fff;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+     font-size: 80px;
+     font-weight: 900;
+     text-transform: uppercase;
+     opacity: 0;
+     letter-spacing: 100px;
+     pointer-events: none;
+     transition: 0.5s;
+}
+ 
+#mercury:hover:after{
+     opacity: 0.5;
+     letter-spacing: 5px;
+}
+ 
+#mercury::before{
+     content: "";
+     width: 180px;
+     height:80px;
+     border-radius: 50%;
+     background: rgb(119, 59, 32);
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,70%);
+     box-shadow: 0 0 80px rgb(255, 127, 81) ;
+     opacity: 0;
+     transition: 0.5s;
+     pointer-events: none;
+}
+ 
+#mercury:hover::before{
+     opacity:0.7 ;
+     width:80px;
+}
+#venus{
+
+    list-style: none;
+    margin:14px 0; 
+     
+}
+ 
+#venus::after{
+     content: attr(data-text);
+     color:#fff;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+     font-size: 80px;
+     font-weight: 900;
+     text-transform: uppercase;
+     opacity: 0;
+     letter-spacing: 100px;
+     pointer-events: none;
+     transition: 0.5s;
+}
+ 
+#venus:hover:after{
+     opacity: 0.5;
+     letter-spacing: 5px;
+}
+ 
+#venus::before{
+     content: "";
+     width: 180px;
+     height:80px;
+     border-radius: 50%;
+     background: 	#b84e33;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,70%);
+     box-shadow: 0 0 80px rgb(250, 215, 138) ;
+     opacity: 0;
+     transition: 0.5s;
+     pointer-events: none;
+}
+ 
+#venus:hover::before{
+     opacity:0.7 ;
+     width:80px;
+}
+
+#earth{
+
+    list-style: none;
+    margin:14px 0; 
+     
+}
+ 
+#earth::after{
+     content: attr(data-text);
+     color:#fff;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+     font-size: 80px;
+     font-weight: 900;
+     text-transform: uppercase;
+     opacity: 0;
+     letter-spacing: 100px;
+     pointer-events: none;
+     transition: 0.5s;
+}
+ 
+#earth:hover:after{
+     opacity: 0.5;
+     letter-spacing: 5px;
+}
+ 
+#earth::before{
+     content: "";
+     width: 180px;
+     height:80px;
+     border-radius: 50%;
+     background-image: linear-gradient(to right,green ,blue );
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,70%);
+     box-shadow: 0 0 80px rgb(255, 218, 205) ;
+     opacity: 0;
+     transition: 0.5s;
+     pointer-events: none;
+}
+ 
+#earth:hover::before{
+     opacity:0.8 ;
+     width:80px;
+ }
+#mars{
+
+    list-style: none;
+    margin:14px 0; 
+     
+}
+ 
+#mars::after{
+     content: attr(data-text);
+     color:#fff;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,1%);
+     font-size: 80px;
+     font-weight: 900;
+     text-transform: uppercase;
+     opacity: 0;
+     letter-spacing: 100px;
+     pointer-events: none;
+     transition: 0.5s;
+}
+ 
+#mars:hover:after{
+     opacity: 0.5;
+     letter-spacing: 5px;
+}
+ 
+#mars::before{
+     content: "";
+     width: 180px;
+     height:80px;
+     border-radius: 50%;
+     background: rgb(255, 0, 0);
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,140%);
+     box-shadow: 0 0 80px rgb(255, 231, 222) ;
+     opacity: 0;
+     transition: 0.5s;
+     pointer-events: none;
+}
+ 
+#mars:hover::before{
+     opacity:0.7 ;
+     width:80px;
+}
+#jupiter{
+
+    list-style: none;
+    margin:14px 0; 
+     
+}
+ 
+#jupiter::after{
+     content: attr(data-text);
+     color:#fff;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,50%);
+     font-size: 80px;
+     font-weight: 900;
+     text-transform: uppercase;
+     opacity: 0;
+     letter-spacing: 100px;
+     pointer-events: none;
+     transition: 0.5s;
+}
+ 
+#jupiter:hover:after{
+     opacity: 0.5;
+     letter-spacing: 5px;
+}
+ 
+#jupiter::before{
+     content: "";
+     width: 180px;
+     height:80px;
+     border-radius: 50%;
+     background: linear-gradient( #e7b48a ,#f07229 , #833000 );
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,200%);
+     box-shadow: 0 0 80px #c2addd ;
+     opacity: 0;
+     transition: 0.5s;
+     pointer-events: none;
+}
+ 
+#jupiter:hover::before{
+     opacity:0.7 ;
+     width:80px;
+}
+
+#saturn{
+
+   list-style: none;
+   margin:14px 0; 
+    
+}
+
+#saturn::after{
+    content: attr(data-text);
+    color:#fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,100%);
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    opacity: 0;
+    letter-spacing: 100px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+#saturn:hover:after{
+    opacity: 0.5;
+    letter-spacing: 5px;
+}
+
+#saturn::before{
+    content: "";
+    width: 180px;
+    height:80px;
+    border-radius: 50%;
+    background: #e7b48a ;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,280%);
+    box-shadow: 0 0 80px #b39dcf ;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+#saturn:hover::before{
+    opacity:0.7 ;
+    width:80px;
+}
+
+#uranus{
+
+   list-style: none;
+   margin:14px 0; 
+    
+}
+
+#uranus::after{
+    content: attr(data-text);
+    color:#fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,150%);
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    opacity: 0;
+    letter-spacing: 100px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+#uranus:hover:after{
+    opacity: 0.5;
+    letter-spacing: 5px;
+}
+
+#uranus::before{
+    content: "";
+    width: 180px;
+    height:80px;
+    border-radius: 50%;
+    background: #0ee2e9fd;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,330%);
+    box-shadow: 0 0 80px #6861c7 ;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+#uranus:hover::before{
+    opacity:0.7 ;
+    width:80px;
+}
+
+#neptun{
+
+   list-style: none;
+   margin:14px 0; 
+    
+}
+
+#neptun::after{
+    content: attr(data-text);
+    color:#fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,200%);
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    opacity: 0;
+    letter-spacing: 100px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+#neptun:hover:after{
+    opacity: 0.5;
+    letter-spacing: 5px;
+}
+
+#neptun::before{
+    content: "";
+    width: 180px;
+    height:65px;
+    border-radius: 50%;
+    background: #0058fcfd;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,470%);
+    box-shadow: 0 0 80px #7d74ffd7 ;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+#neptun:hover::before{
+    opacity:0.7 ;
+    width:65px;
+}
+
